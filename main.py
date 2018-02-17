@@ -6,10 +6,10 @@ from FaceMask import ComputeMask
 def main():
     # capture video
     rets, frames = Capture()
-    ShowFrames(frames)
 
     # compute face mask from frames
-    ComputeMask(frames)
+    frames = ComputeMask(frames)
+    ShowFrames(frames)
     
 if __name__ == '__main__':
     main()
